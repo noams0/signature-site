@@ -6,7 +6,6 @@ if (php_sapi_name() !== "cli") {
 
 $db = new SQLite3('db.sqlite');
 
-// Création de la table des signatures
 $db->exec("CREATE TABLE IF NOT EXISTS signatures (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
