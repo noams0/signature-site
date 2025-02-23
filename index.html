@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribune</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<h1>Tribune</h1>
+<p>Texte de la tribune...</p>
 
+<h2>Signer la tribune</h2>
+<input type="text" id="name" placeholder="Votre nom">
+<button onclick="sign()">Signer</button>
+<p id="message"></p>
+
+<h2>Signataires</h2>
+<ul id="signatures"></ul>
+
+<script src="script.js"></script>
 </body>
 </html>
