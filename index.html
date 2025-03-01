@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tribune</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,13 +11,14 @@
 <p>Texte de la tribune...</p>
 
 <h2>Signer la tribune</h2>
-<input type="text" id="name" placeholder="Votre nom">
-<button onclick="sign()">Signer</button>
-<p id="message"></p>
+<form id="signature-form">
+    <input type="text" id="name" placeholder="Nom" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button type="submit">Demander à signer</button>
+</form>
+<p id="response"></p>
 
 <h2>Signataires</h2>
-<ul id="signatures"></ul>
-
-<script src="script.js"></script>
+<ul id="signatories"></ul>
 </body>
 </html>
